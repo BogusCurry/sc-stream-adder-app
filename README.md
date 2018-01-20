@@ -17,12 +17,12 @@ This is a `node.js` application which runs on the same server as your SHOUTcast 
 7. Open firewall port the app uses.
 
 ## Setup Configuration
-`port`: The port that this app should run on.
-`minSID`: The smallest randomly generated SID to use.
-`maxSID`: The largest randomly generated SID to use.
-`maxUsersDefault`: The default amount of maximum users to be able to connect.
-`defaultPwd`: The default password you can insert instead of the 16 digit random password.
-`absoluteShoutcastConfigPath`: The absolute path of your SHOUTcast server configuration. This needs to be readable/writeable.
-`shoutcastURL`: The URL to access the web interface of your SHOUTcast server. Could be `localhost:8000`.
-`appUsername`: Username to use when logging into the app. **Shouldn't be `admin`.**
-`appPwd`: Password to use when logging into the app. **This should be secure to stop people hijacking your server.**
+- `port`: The port that this app should run on.
+- `minSID`: The smallest randomly generated SID to use.
+- `maxSID`: The largest randomly generated SID to use.
+- `maxUsersDefault`: The default amount of maximum users to be able to connect.
+- `defaultPwd`: The default password you can insert instead of the 16 digit random password.
+- `absoluteShoutcastConfigPath`: The absolute path of your SHOUTcast server configuration. This needs to be readable/writeable.
+- `shoutcastURL`: The URL to access the web interface of your SHOUTcast server. Could be `localhost:8000`.
+- `appUsername`: Username to use when logging into the app. **Shouldn't be `admin`.**
+- `appPwd`: Password to use when logging into the app. **This should be secure to stop people hijacking your server.**
