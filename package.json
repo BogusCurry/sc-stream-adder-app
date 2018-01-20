@@ -1,0 +1,16 @@
+{
+  "name": "setup-shoutcast-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Charlie Britton",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-basic-auth": "^1.1.3",
+    "requestify": "^0.2.5"
+  }
+}

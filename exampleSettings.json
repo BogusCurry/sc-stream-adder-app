@@ -1,0 +1,12 @@
+{
+  "port": 4000,
+  "minSID": 1000,
+  "maxSID": 10000,
+  "maxUsersDefault": 500,
+  "defaultPwd": "hackme",
+  "absoluteShoutcastConfigPath": "/path/to/file/sc_serv.conf",
+  "shoutcastURL": "http://localhost:8000",
+  "shoutcastAdminPassword": "hackme",
+  "appUsername": "joebloggs",
+  "appPwd": "hackme"
+}
