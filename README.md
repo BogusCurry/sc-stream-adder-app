@@ -21,6 +21,7 @@ This is a `node.js` application which runs on the same server as your SHOUTcast 
 - `minSID`: The smallest randomly generated SID to use.
 - `maxSID`: The largest randomly generated SID to use.
 - `maxUsersDefault`: The default amount of maximum users to be able to connect.
+- `maxGlobalUsersDefault`: The default amount of maximum global users to be able to connect.
 - `defaultPwd`: The default password you can insert instead of the 16 digit random password.
 - `absoluteShoutcastConfigPath`: The absolute path of your SHOUTcast server configuration. This needs to be readable/writeable.
 - `shoutcastURL`: The URL to access the web interface of your SHOUTcast server. Could be `localhost:8000`.

@@ -1,14 +1,17 @@
 
 h1 Shoutcast Server Setup
+p Reload the page to reset parameters.
 
 form(action="/submit" method=get)
   p Stream ID: <input type="text" name="SID" value="#{SID}"><br>
   p Max Users: <input type="text" name="maxUsers" value="#{maxUsers}"><br>
+  p Max Global Users: <input type="text" name="maxGlobalUsers" value="#{maxGlobalUsers}"><br>
   p Stream Password: <input id="pwd" type="text" name="password" value="#{password}">&nbsp<button type="button" onclick="defaultPwd()">Use Default Password</button>
   button Submit
+
 script.
   function defaultPwd() {
-    
+
     document.getElementById("pwd").value = "#{defaultPwd}"
-  
+
   }
