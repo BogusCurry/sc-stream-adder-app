@@ -116,10 +116,10 @@ app.get("/submit", (req, res) => {
 			// Update Global Max Users
 			fs.readFile(settings.absoluteShoutcastConfigPath, "utf8", (err, shoutcastConfig) => {
 
-				let pattern = /maxuser: \d+/;
+				let pattern = /maxuser=\d+/;
 				let stringToAppend = "\n\n# Generated at " + new Date() + "\nstreamid_" + req.query.SID + "=" + req.query.SID + "\nstreammaxuser_" + req.query.SID + "=" + req.query.maxUsers + "\nstreampassword_" + req.query.SID + "=" + req.query.password;
 				console.log(shoutcastConfig);
-				shoutcastConfig = shoutcastConfig.replace(pattern, "maxuser: " + req.query.maxGlobalUsers);
+				shoutcastConfig = shoutcastConfig.replace(pattern, "maxuser=" + req.query.maxGlobalUsers);
 				shoutcastConfig += stringToAppend
 				fs.writeFile(settings.absoluteShoutcastConfigPath, shoutcastConfig);
 
